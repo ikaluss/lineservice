@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: line-service
+  cloud:
+    consul:
+      host: 10.122.187.210
+      port: 8900
+      discovery:
+        serviceName: line-service
+        prefer-ip-address: true
+    #      config:
+    #        enabled: true
+    #        format: yaml
+    #        prefix: config
+    #        profile-separator: ':'
+    #        data-key: data
+
+server:
+  port: 8601
